@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#5de0e6">
+<title>Palabras que comunican, ideas que conectan</title>
+<meta name="description" content="Página interactiva sobre redacción publicitaria: aprende y practica con 3 actividades.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="blobs" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+
+  <!-- ============ Barra superior ============ -->
+  <header class="topbar">
+    <div class="topbar-in glass">
+      <a class="brand" href="#inicio"><span class="brand-dot"></span><span>Las palabras venden</span></a>
+      <div class="prog" aria-live="polite">
+        <div class="prog-bar"><span id="progFill"></span></div>
+        <span id="progText">0/3</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ Inicio ============ -->
+    <section class="hero wrap" id="inicio">
+      <svg class="plane p1" viewBox="0 0 120 90" aria-hidden="true">
+        <polygon points="0,34 120,0 66,88 52,54" fill="#c78fd8"/>
+        <polygon points="52,54 120,0 62,46" fill="#a566bb"/>
+        <polygon points="52,54 66,88 62,46" fill="#8e55a8"/>
+      </svg>
+      <svg class="plane p2" viewBox="0 0 120 90" aria-hidden="true">
+        <polygon points="0,34 120,0 66,88 52,54" fill="#c78fd8"/>
+        <polygon points="52,54 120,0 62,46" fill="#a566bb"/>
+        <polygon points="52,54 66,88 62,46" fill="#8e55a8"/>
+      </svg>
+
+      <span class="eyebrow reveal">Tríptico interactivo</span>
+      <h1 class="reveal">Palabras que comunican, ideas que conectan.</h1>
+      <p class="reveal">Aprende qué es la redacción publicitaria y ponla en práctica con 3 actividades.</p>
+      <div class="hero-cta reveal">
+        <a class="btn primary" href="#aprende">Comenzar</a>
+        <a class="btn ghost" href="#actividad1">Ir a las actividades</a>
+      </div>
+    </section>
+
+    <!-- ============ Aprende ============ -->
+    <section class="wrap" id="aprende">
+      <div class="section-head reveal">
+        <span class="eyebrow">Antes de jugar</span>
+        <h2>Lo esencial de la redacción publicitaria</h2>
+        <p class="lead">Lee las tres ideas clave. Las necesitarás en las actividades.</p>
+      </div>
+
+      <div class="learn-grid">
+        <article class="glass card c1 reveal">
+          <span class="tag">Definición</span>
+          <h3>¿Qué es la redacción publicitaria?</h3>
+          <p>Es la creación de mensajes persuasivos que buscan captar la atención, conectar con un público y motivarlo a actuar.</p>
+          <span class="tag">Se caracteriza por</span>
+          <ul class="ticks">
+            <li>Ser creativa.</li>
+            <li>Usar un lenguaje atractivo.</li>
+            <li>Conocer a su público.</li>
+            <li>Generar una respuesta.</li>
+          </ul>
+        </article>
+
+        <article class="glass card c2 reveal">
+          <span class="tag">Importancia</span>
+          <h3>La importancia de una redacción correcta</h3>
+          <p>La misma idea puede sonar diferente. La clave está en cómo se dice.</p>
+          <div class="rule"><strong>Ortografía</strong><span>Evita errores al escribir.</span></div>
+          <div class="rule"><strong>Gramática</strong><span>Ayuda a construir correctamente las frases.</span></div>
+          <div class="rule"><strong>Puntuación</strong><span>Organiza las ideas y facilita la comprensión.</span></div>
+          <p class="warn">Un error puede cambiar el significado y afectar la credibilidad de una marca.</p>
+        </article>
+
+        <article class="glass card c3 reveal">
+          <span class="tag">Lema</span>
+          <h3>Las palabras venden</h3>
+          <div class="formula" aria-label="Ideas más estrategias más palabras">
+            <span class="f">Ideas</span><span class="plus">+</span>
+            <span class="f">Estrategias</span><span class="plus">+</span>
+            <span class="f">Palabras</span>
+          </div>
+          <p>Una buena idea necesita una estrategia clara y las palabras correctas para llegar a las personas.</p>
+          <p><strong>Palabras que comunican, ideas que conectan.</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ Actividades ============ -->
+    <section class="wrap" id="actividades">
+      <div class="section-head reveal">
+        <span class="eyebrow">Practica</span>
+        <h2>3 actividades para ponerte a prueba</h2>
+        <p class="lead">Completa las tres para obtener tu insignia de redactor publicitario.</p>
+      </div>
+
+      <!-- Actividad 1 -->
+      <article class="glass act reveal" id="actividad1">
+        <div class="act-head">
+          <div class="num">1</div>
+          <div class="act-title">
+            <h3>Une las características</h3>
+            <p>Toca una característica y luego la descripción que le corresponde.</p>
+          </div>
+          <span class="chip-status" id="chip-a1">Pendiente</span>
+        </div>
+
+        <div class="pairs">
+          <div class="pairs-col" id="a1-left"><h4>Características</h4></div>
+          <div class="pairs-col" id="a1-right"><h4>Descripciones</h4></div>
+        </div>
+
+        <div class="msg" id="a1-msg" hidden></div>
+        <div class="act-foot"><button class="btn primary" id="next-a1" data-target="actividad2" hidden>Siguiente actividad →</button></div>
+      </article>
+
+      <!-- Actividad 2 -->
+      <article class="glass act reveal" id="actividad2">
+        <div class="act-head">
+          <div class="num">2</div>
+          <div class="act-title">
+            <h3>Caza errores</h3>
+            <p>Este anuncio tiene 5 errores: 2 de ortografía, 1 de gramática y 2 de puntuación. Toca las palabras que creas incorrectas y corrígelas.</p>
+          </div>
+          <span class="chip-status" id="chip-a2">Pendiente</span>
+        </div>
+
+        <div class="legend">
+          <div class="rule"><strong>Ortografía</strong><span>Evita errores al escribir.</span></div>
+          <div class="rule"><strong>Gramática</strong><span>Ayuda a construir correctamente las frases.</span></div>
+          <div class="rule"><strong>Puntuación</strong><span>Organiza las ideas y facilita la comprensión.</span></div>
+        </div>
+
+        <div class="ad">
+          <div class="ad-brand">Vita Fresh · marca ficticia</div>
+          <div class="ad-title">Jugo natural</div>
+          <p class="ad-text" id="ad-text"></p>
+        </div>
+
+        <div class="meter" aria-live="polite">
+          <div class="meter-top">
+            <span>Credibilidad de la marca: <span id="meterLabel">Baja</span></span>
+            <span><span id="fixedCount">0</span>/5 errores corregidos · <span id="meterNum">20%</span></span>
+          </div>
+          <div class="meter-bar"><span id="meterFill"></span></div>
+        </div>
+
+        <div class="fixpanel" id="fixpanel" hidden>
+          <div class="fix-top"><strong id="fix-title"></strong><span class="pill" id="fix-cat"></span></div>
+          <small id="fix-hint"></small>
+          <div class="opts" id="fix-opts"></div>
+          <button class="link-btn" id="fix-cancel" type="button">Cancelar</button>
+        </div>
+
+        <div class="msg" id="a2-msg" hidden></div>
+        <div class="act-foot"><button class="btn primary" id="next-a2" data-target="actividad3" hidden>Siguiente actividad →</button></div>
+      </article>
+
+      <!-- Actividad 3 -->
+      <article class="glass act reveal" id="actividad3">
+        <div class="act-head">
+          <div class="num">3</div>
+          <div class="act-title">
+            <h3>Crea tu eslogan</h3>
+            <p>Combina una idea, una estrategia y las palabras correctas para vender un producto.</p>
+          </div>
+          <span class="chip-status" id="chip-a3">Pendiente</span>
+        </div>
+
+        <div class="steps3">
+          <div>
+            <span class="label">1. Elige la idea <span>(el producto)</span></span>
+            <div class="chips" id="prod-chips" role="group" aria-label="Producto">
+              <button class="chip" type="button" aria-pressed="false">Jugo natural</button>
+              <button class="chip" type="button" aria-pressed="false">App de fitness</button>
+              <button class="chip" type="button" aria-pressed="false">Tenis deportivos</button>
+              <button class="chip" type="button" aria-pressed="false">Cafetería local</button>
+            </div>
+          </div>
+
+          <div>
+            <span class="label">2. Define la estrategia <span>(a quién le hablas)</span></span>
+            <div class="chips" id="aud-chips" role="group" aria-label="Público">
+              <button class="chip" type="button" aria-pressed="false">Jóvenes</button>
+              <button class="chip" type="button" aria-pressed="false">Familias</button>
+              <button class="chip" type="button" aria-pressed="false">Deportistas</button>
+              <button class="chip" type="button" aria-pressed="false">Estudiantes</button>
+            </div>
+          </div>
+
+          <div>
+            <label class="label" for="slogan">3. Escribe las palabras <span>(tu eslogan, mínimo 3 palabras)</span></label>
+            <textarea id="slogan" maxlength="80" placeholder="Ejemplo: Descubre el sabor que te hace sonreír."></textarea>
+            <div class="count" id="slogan-count">0/80</div>
+          </div>
+
+          <div class="tiles">
+            <div class="tile"><small>Idea</small><b id="f-idea">—</b></div>
+            <div class="tile"><small>Estrategia</small><b id="f-estr">—</b></div>
+            <div class="tile"><small>Palabras</small><b id="f-pal">—</b></div>
+          </div>
+
+          <div class="preview">
+            <div class="pv-text" id="pv-text">Tu eslogan aparecerá aquí</div>
+            <div class="pv-meta" id="pv-meta">Producto · Elige un público</div>
+          </div>
+
+          <button class="btn primary" id="eval-btn" type="button" disabled>Evaluar mi eslogan</button>
+
+          <div id="check" hidden>
+            <span class="label">Revisa tu eslogan con las 4 características</span>
+            <div class="checklist">
+              <label class="check-row">
+                <input type="checkbox" id="c-creativa"><span class="switch"></span>
+                <span class="check-text"><strong>Es creativa</strong><small>Tip: evita frases que ya has escuchado muchas veces.</small></span>
+              </label>
+              <label class="check-row">
+                <input type="checkbox" id="c-lenguaje"><span class="switch"></span>
+                <span class="check-text"><strong>Usa un lenguaje atractivo</strong><small>Tip: elige palabras que despierten emociones.</small></span>
+              </label>
+              <label class="check-row">
+                <input type="checkbox" id="c-publico"><span class="switch"></span>
+                <span class="check-text"><strong>Conoce a su público</strong><small id="hint-pub">Escribiste para tu público elegido.</small></span>
+              </label>
+              <label class="check-row">
+                <input type="checkbox" id="c-resp"><span class="switch"></span>
+                <span class="check-text"><strong>Genera una respuesta</strong><small id="hint-resp"></small></span>
+              </label>
+            </div>
+            <div class="score-line">
+              <span class="score-big">Puntaje: <span id="score3">0</span>/100</span>
+              <button class="btn primary" id="finish3" type="button">Terminar actividad</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="act-foot"><button class="btn primary" id="next-a3" data-target="resultados" hidden>Ver mis resultados →</button></div>
+      </article>
+    </section>
+
+    <!-- ============ Resultados ============ -->
+    <section class="wrap" id="resultados">
+      <div class="section-head reveal">
+        <span class="eyebrow">Tu progreso</span>
+        <h2>Resultados</h2>
+      </div>
+
+      <div class="glass results reveal">
+        <div class="lock" id="res-lock">
+          <span class="big">🔒</span>
+          Completa las 3 actividades para descubrir tu insignia.<br>
+          <span id="res-left">Te faltan 3.</span>
+        </div>
+
+        <div id="res-body" hidden>
+          <div class="res-grid">
+            <div class="ring" id="ring"><div class="ring-in"><div><b id="res-avg">0</b><span>puntos de 100</span></div></div></div>
+            <div class="res-info">
+              <span class="badge"><span id="badge-emoji">🏆</span><span id="badge-name">Redactor publicitario</span></span>
+              <p id="badge-msg"></p>
+              <div class="bars">
+                <div class="bar-row"><span>Características</span><div class="track"><i id="bar1" style="width:0"></i></div><b id="val1">0</b></div>
+                <div class="bar-row"><span>Caza errores</span><div class="track"><i id="bar2" style="width:0"></i></div><b id="val2">0</b></div>
+                <div class="bar-row"><span>Tu eslogan</span><div class="track"><i id="bar3" style="width:0"></i></div><b id="val3">0</b></div>
+              </div>
+              <button class="btn ghost" id="restart" type="button">Volver a jugar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <strong>Las palabras venden:</strong> ideas + estrategias + palabras.
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
